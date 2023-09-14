@@ -324,14 +324,14 @@
 
 
 @font-face {
-    font-family: graphik;
+    font-family: "graphik-regular";
     src: url("assets/font/GRAPHIKREGULAR.OTF");
 }
 
 body{
     background: #EFEFEF;
     color: #060606;
-    font-family: graphik;
+    font-family: "graphik-regular";
 }
 
 
