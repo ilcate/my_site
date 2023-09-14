@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: center;
         font-size: 18px;
-        font-weight: 600;
+        font-family: "graphik-regular";
         margin: 20px;
         flex-direction: column;
     }
@@ -89,7 +89,7 @@
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 26px;    
-    font-weight: 600;
+    font-family: "graphik-regular";
 }
     #corps{
         margin-left: 42px;
@@ -107,7 +107,7 @@
         align-items: center;
         justify-content: center;
         font-size: 18px;
-        font-weight: 600;
+        font-family: "graphik-regular";
         margin: 40px;
         flex-direction: column;
     }
@@ -249,7 +249,7 @@
         margin-top: 50px;
         margin-bottom: 20px;
         font-size: 34px;
-        font-weight: 600;
+        font-family: "graphik-semibold";
     }
     #corps{
         margin-left: 70px;
@@ -265,7 +265,7 @@
         align-items: center;
         justify-content: center;
         font-size: 24px;
-        font-weight: 600;
+        font-family: "graphik-regular";
         margin: 70px;
         flex-direction: column;
     }
@@ -319,7 +319,7 @@
 
 #menu-container span.selected{
     color: #E33737;
-    font-weight: 600;
+    font-family: "graphik-regular";
 }
 
 
@@ -327,6 +327,23 @@
     font-family: "graphik-regular";
     src: url("assets/font/GRAPHIKREGULAR.OTF");
 }
+
+@font-face {
+    font-family: "graphik-bold";
+    src: url("assets/font/GRAPHIKBOLD.OTF");
+}
+
+@font-face {
+    font-family: "graphik-semibold";
+    src: url("assets/font/GRAPHIKSEMIBOLD.OTF");
+}
+
+@font-face {
+    font-family: "graphik-light";
+    src: url("assets/font/GRAPHIKLIGHT.OTF");
+}
+
+
 
 body{
     background: #EFEFEF;
@@ -360,13 +377,13 @@ body{
     color: #E33737;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-family: "graphik-bold";
     font-size: 20px;
 }
 
 #footer-txt-1{
     margin-left: 70px;
-    font-weight: 300;
+    font-family: "graphik-light";
     font-size: 14px;
 }
 
@@ -459,11 +476,11 @@ a{
 }
 
 .c1{
-    font-weight: 400;
+   font-family: "graphik-light";
 }
 
 .c2{
-    font-weight: 400;
+   font-family: "graphik-light";
 }
 
 #miao{
