@@ -1,4 +1,8 @@
 @media (max-width: 650px) {
+
+    .spacing5{  
+        margin: 2%;
+    }
     #one-page{
         height: 85vh;
         position: relative;   
