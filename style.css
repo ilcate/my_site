@@ -1,4 +1,9 @@
 @media (max-width: 650px) {
+    #one-page{
+        height: 85vh;
+        position: relative;   
+    }
+    
     
     .sisolina{
         display: none;
@@ -125,6 +130,7 @@
    align-items: center;
     background-color: rgba(0, 0, 0, 0.1); 
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 10px;
     position: fixed;
@@ -172,6 +178,11 @@
 }
   
 @media (min-width: 651px) {
+    #one-page{
+        height: 95vh;
+        position: relative;   
+    }
+    
     .sisola{
         display: none;
     }
@@ -396,10 +407,6 @@ body{
     width: 100%;
 }
 
-#one-page{
-    height: 95vh;
-    position: relative;   
-}
 
 
 
