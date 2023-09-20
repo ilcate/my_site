@@ -2,6 +2,7 @@ let _app = {}
 
 changeAll = () => {
     if(document.querySelector("#theme").innerHTML == "Scuro"){
+        sessionStorage.setItem("theme", "Chiaro")
         document.querySelector("#theme").innerHTML = "Chiaro"
         document.body.style.backgroundColor = "#EFEFEF"
         document.body.style.color = "#060606"
@@ -22,8 +23,9 @@ changeAll = () => {
         if(document.querySelector(".logo-grande")){
             document.querySelector(".logo-grande").src = "assets/images/ChristianCatenacci.png"
         }
-        sessionStorage.setItem("theme", "Chiaro")
+
     }else{
+        sessionStorage.setItem("theme", "Scuro")
         document.querySelector("#theme").innerHTML = "Scuro"
         document.body.style.backgroundColor = "#060606"
         document.body.style.color = "#EFEFEF"
@@ -44,7 +46,7 @@ changeAll = () => {
         if(document.querySelector(".logo-grande")){
             document.querySelector(".logo-grande").src = "assets/images/ChristianCatenacciBianco.png"
         }
-        sessionStorage.setItem("theme", "Scuro")
+        document.querySelector(".loader").style.backgroundColor = "#060606"
     }
 }
 
@@ -74,12 +76,18 @@ _app.checkDevice = () => {
     
 }
 
+_app.removeLoader = () => {
+    setTimeout(() => {
+        document.querySelector(".loader").style.display = 'none'
+    }, 500);
+    
+}
 
 
 _app.startUp = () => {
     _app.getClick()
     _app.checkStorage()
-    // _app.checkDevice()
+    _app.removeLoader()
 }
 
 _app.startUp()
