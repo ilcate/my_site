@@ -523,6 +523,7 @@ a{
     justify-content: center;
     background: #EFEFEF;
     transition: opacity 0.75s, visibility 0.75s;
+    z-index: 1;
   }
   
   .loader--hidden {
